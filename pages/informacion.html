@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Se utiliza un solo CSS para todo el proyecto -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Información | ConoceUruguay</title>
+    <link rel="shortcut icon" href="../multimedia/logo.ico">
+</head>
+
+<body>
+    <div class="estructura-pagina">
+        <header class="container-fluid encabezado">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-lg">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../multimedia/logo.png" width="30" height="30" alt="Logo sobre página de viajes"
+                            class="d-inline-block align-text-bottom">
+                        ConoceUruguay
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/ubicaciones.html">Ubicación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/informacion.html">Información</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Perfil
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li> -->
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="contenido-principal">
+            <h1>Información</h1>
+            <section class="busqueda-y-filtrado">
+                <form action="" method="POST">
+                    <label for="buscador">Buscar:</label>
+                    <input type="text" id="buscador">
+                    <select id="filtro">
+                        <option value="todos">Todos</option>
+                        <option value="restaurantes">Restaurantes</option>
+                        <option value="bares">Bares</option>
+                        <option value="parques">Parques</option>
+                        <option value="monumentos">Monumentos</option>
+                        <option value="museos">Museos</option>
+                        <option value="librerias">Librerias</option>
+                    </select>
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+            <section class="lista-lugares">
+                <article class="lugar">
+                    <img src="../multimedia/galeria/casa-pueblo-punta-del-este-uruguay.jpg"
+                        alt="Imagen que muestra edificio turistico ubicado cerca de la playa" class="imagen-lista">
+                    <h3>Casa Pueblo</h3>
+                    <p>El Museo Casapueblo es el nombre con el que se conoce a una edificación construida por el artista
+                        uruguayo Carlos Páez Vilaró ubicada en Punta Ballena, a 13 km de Punta del Este, Uruguay.</p>
+                </article>
+                <article class="lugar">
+                    <img src="../multimedia/galeria/el-Aguila.webp" alt="Imagen que muestra un aguila de piedra"
+                        class="imagen-lista">
+                    <h3>El Aguila</h3>
+                    <p>El Águila, también conocida como Quimera, es una edificación situada en el balneario uruguayo
+                        Villa
+                        Argentina, el cual se encuentra a dos kilómetros de Atlántida.</p>
+                </article>
+                <article class="lugar">
+                    <img src="../multimedia/galeria/maldonado.jpg"
+                        alt="Imagen que muestra cinco dedos de piedra parcialmente sumergidos en arena"
+                        class="imagen-lista">
+                    <h3>La mano</h3>
+                    <p>La mano es una escultura de cinco dedos parcialmente sumergidos en arena, localizada en la parada
+                        1
+                        de la playa Brava en Punta del Este, Uruguay.</p>
+                </article>
+                <article class="lugar">
+                    <img src="../multimedia/galeria/Montevideo-Plaza-Independencia-1.jpg"
+                        alt="Foto de la Plaza Independencia" class="imagen-lista">
+                    <h3>Plaza Independencia</h3>
+                    <p>La plaza Independencia es la plaza más importante de la ciudad de Montevideo, en Uruguay, se
+                        ubica en
+                        el centro de la ciudad, en el espacio que ocupaba la Ciudadela de Montevideo. Alberga en su
+                        centro
+                        el monumento y mausoleo del general José Gervasio Artigas.</p>
+                </article>
+                <article class="lugar">
+                    <img src="../multimedia/galeria/Quebrada de los Cuervos.jpeg"
+                        alt="Foto de paisaje de la quebrada de los cuervos" class="imagen-lista">
+                    <h3>Quebrada de los cuervos</h3>
+                    <p>El paisaje protegido Quebrada de los Cuervos es un paisaje protegido de Uruguay, que desde 2008
+                        integra el Sistema Nacional de Áreas Protegidas. Lo conforma un accidente geográfico en forma de
+                        garganta, situado a 45 km de la ciudad de Treinta y Tres.</p>
+                </article>
+            </section>
+        </main>
+        <footer class="pie-de-pagina">
+            <section>
+                <a href="../index.html" class="logo">
+                    <img src="../multimedia/logo.png" alt="Logo sobre página de viajes" class="img-logo">
+                    ConoceUruguay
+                </a>
+                <p>@Todos los derechos resevados.</p>
+            </section>
+            <section class="redes-sociales">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

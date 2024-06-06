@@ -1,0 +1,210 @@
+/* Selectores */
+
+/* Selectores de etiqueta */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #c6e3ff;
+}
+
+/* ### Estilo de la barra de navegación ### */
+
+header {
+    background-color: #FFFFFF;
+    position: sticky;
+    z-index: 20;
+    top:0px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+nav ul {
+    display: flex;
+}
+
+/* .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px; 
+} */
+
+/* ######################################## */
+
+/* Margen superior para dejar espacio para la barra de navegación */
+main {
+    /* margin-top: 59px; */
+    /* display: inherit; */
+    overflow:visible;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #FFFFFF;
+    display: flex;
+    /* width:100%; */
+    /* box-shadow: 1px 1px 3px gray; */
+    /* position:fixed; */
+    /* bottom:0; */
+}
+
+/* Quitar las decoraciones de los anclajes */
+a {
+    text-decoration: none;
+}
+
+/* Quitar viñetas de las listas */
+ul {
+    list-style-type: none;    
+}
+
+/* Elementos de texto de la barra de navegación */
+header nav ul li {
+    /* display: inline-block;
+    font-size: larger; */
+    font-weight: bold;
+}
+
+/* Selectores de ID */
+
+#id-ejemplo {
+    background-color: gray;
+}
+
+/* Selectores de clases */
+
+.clase-ejemplo {
+    width: 50%;
+    height: 100vh;
+    /* viewport width/height utiliza la medida del dispositivo */
+    /* Porcentaje % utiliza el porcentaje de su contenedor */
+}
+
+.logo {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    /* margin-left: 20px; */
+}
+
+.img-logo {
+    width: 45px;
+    height: 45px;
+}
+
+/* .btn-perfil {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+} */
+
+.imagen-galeria {
+    max-width: 20%;
+}
+
+.lugar {
+    display: inline-flex;
+}
+
+.imagen-lista {
+    width: 150px;
+}
+
+.lista-lugares {
+    display: flex;
+    /* flex-direction: row;  column */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lugar {
+    width: 80%;
+}
+
+/* Comienza a aplicar Grid */
+
+.estructura-pagina {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    ". main ."
+    "footer footer footer";
+}
+
+.encabezado {
+    grid-area: header;
+}
+
+.contenido-principal {
+    grid-area: main;
+}
+
+.pie-de-pagina {
+    grid-area: footer;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /* width: 100%; */
+    /* height: 20vh; */
+}
+
+.portada {
+    grid-area: portada;
+    /* grid-column: 1/3; */
+
+}
+
+.seccion-index {
+    /* background-image: url("../multimedia/galeria/Montevideo-Plaza-Independencia-1.jpg");
+    background-image: ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 90vh; */
+    /* display: grid; */
+    /* max-height: 1400px; */
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    /* grid-template-areas:
+    "img-index img-index img-index"
+    "titulo titulo titulo"
+    "sub-titulo sub-titulo sub-titulo"
+    "parrafo parrafo parrafo"; */
+}
+
+.titulo {
+    grid-area: titulo;
+    border-width: 3px;
+    border-color: red;
+}
+
+.sub-titulo {
+    grid-area: sub-titulo;
+}
+
+.parrafo {
+    grid-area: parrafo;
+}
+
+.img-index {
+    position: sticky;
+    top:59px;
+    z-index: -10;
+    grid-area: img-index;
+    /* grid-column: 1/4;
+    grid-row: 1/4; */
+    /* object-fit: cover; */
+    width: 100%;
+
+    /* height: 100%; */
+    /* max-height: 94vh; */
+}
+
+/* @media only screen and () {
+    
+} */
