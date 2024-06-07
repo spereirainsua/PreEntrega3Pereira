@@ -206,6 +206,10 @@ header nav ul li {
     /* max-height: 94vh; */
 }
 
+.tamanio-first-row {
+    height: 100vh;
+}
+
 /* @media only screen and () {
     
 } */
