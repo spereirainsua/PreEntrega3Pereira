@@ -176,6 +176,35 @@ header nav ul li {
     /* max-height: 94vh; */
 }
 
-/* @media only screen and () {
-    
-} */
+.item {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nombre, .apellido {
+    width: 50%;
+}
+
+.boton-form {
+    margin: 5px 0;
+    background-color: orange;
+    width: 200px;
+}
+
+.sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:576px) {
+    .nombre, .apellido, .boton-form {
+        width: 100%;
+    }
+} 
