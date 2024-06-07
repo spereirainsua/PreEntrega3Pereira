@@ -132,26 +132,33 @@ header nav ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 10fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 10fr 2fr;
+    grid-template-rows: 1fr 1fr; */
 }
 
 .titulo {
-    grid-area: titulo;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    /* grid-area: titulo; */
+    /* grid-column: 1/2;
+    grid-row: 2/3; */
+    font-weight: bold;
+    color:#FFFFFF;
 }
 
 .sub-titulo {
-    grid-area: sub-titulo;
-    grid-column: 1/2;
-    grid-row: 3/4;
+    /* grid-area: sub-titulo; */
+    /* grid-column: 1/2;
+    grid-row: 3/4; */
+    font-weight: bold;
+    color:#FFFFFF;
+
 }
 
 .parrafo {
-    grid-area: parrafo;
-    grid-column: 1/2;
-    grid-row: 4/5;
+    /* grid-area: parrafo; */
+    /* grid-column: 1/2;
+    grid-row: 4/5; */
+    color:#FFFFFF;
+
 }
 
 .footer-1, .redes-sociales {
