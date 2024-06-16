@@ -87,7 +87,7 @@ footer {
 
 .footer-logo {
     justify-content: center;
-    align-items:start;
+    align-items: start;
     font-size: 1.25rem;
 }
 
@@ -294,24 +294,29 @@ header nav ul li {
 }
 
 @media (max-width:576px) {
+
     .nombre,
     .apellido,
     .boton-form {
         width: 100%;
     }
+
     .pie-de-pagina {
         grid-template-columns: 1fr;
         grid-gap: 15px;
     }
+
     .footer-logo {
         justify-content: center;
         align-items: center;
     }
+
     .redes-sociales {
         justify-content: center;
         align-items: center;
     }
+
     footer div hr {
-        display:block;
+        display: block;
     }
 }
