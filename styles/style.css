@@ -19,9 +19,10 @@ header {
     background-color: #FFFFFF;
     position: sticky;
     z-index: 20;
-    top:0px;
+    top: 0px;
     box-shadow: 1px 1px 3px gray;
 }
+
 nav ul {
     display: flex;
 }
@@ -37,10 +38,78 @@ ul .nav-item a {
 footer {
     background-color: #FFFFFF;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* width:100%; */
     /* box-shadow: 1px 1px 3px gray; */
     /* position:fixed; */
     /* bottom:0; */
+    z-index: 1;
+    width: 100%;
+}
+
+.pie-de-pagina {
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.pie-de-pagina .redes-sociales .iconos-redes a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    color: #212529;
+    text-align: center;
+    border-bottom: 3px solid;
+    border-color: #212529;
+    /* border-radius: 25px; */
+}
+
+.pie-de-pagina .redes-sociales .iconos-redes a:hover {
+    color: orange;
+    border-color: orange;
+}
+
+.footer-logo,
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    justify-content: center;
+    align-items:start;
+    font-size: 1.25rem;
+}
+
+.redes-sociales {
+    justify-content: center;
+    align-items: center;
+}
+
+footer hr {
+    width: 95%;
+    margin: 10px 0;
+}
+
+footer div hr {
+    display: none;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.copyright {
+    padding: 5px 10px;
+    text-align: center;
 }
 
 /* Quitar las decoraciones de los anclajes */
@@ -50,7 +119,7 @@ a {
 
 /* Quitar viñetas de las listas */
 ul {
-    list-style-type: none;    
+    list-style-type: none;
 }
 
 /* Elementos de texto de la barra de navegación */
@@ -76,10 +145,8 @@ header nav ul li {
 }
 
 .logo {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    /* margin-left: 20px; */
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .img-logo {
@@ -116,30 +183,12 @@ header nav ul li {
     width: 80%;
 }
 
-/* Comienza a aplicar Grid */
-
-.pie-de-pagina {
-    /* grid-area: footer; */
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    z-index: 1;
-
-
-    /* width: 100%; */
-}
-
-.pie-de-pagina div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 .contenido-principal-index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/Montevideo-Plaza-Independencia-1.jpg");
     width: 100%;
     height: 100vh;
-    background-attachment:fixed;
-    background-size:cover;
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     display: flex;
@@ -175,15 +224,16 @@ header nav ul li {
 }
 
 .seccion-index .boton-index:hover {
-    color: var(--bs-nav-link-color);
+    color: #212529;
     background-color: orange;
 }
+
 .titulo {
     font-weight: bold;
     font-size: 50px;
     /* text-shadow: 0px 1px 10px black; */
     letter-spacing: 1px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     /* filter: drop-shadow(0px 0px 20px black); */
 
 }
@@ -194,35 +244,15 @@ header nav ul li {
     /* text-shadow: 0px 1px 10px black; */
     letter-spacing: 1px;
     text-align: center;
-    color:#FFFFFF;
+    color: #FFFFFF;
 
 }
 
 .parrafo {
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 20px;
     text-align: center;
     /* text-shadow: 0px 1px 10px black; */
-}
-
-.footer-1, .redes-sociales {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin: 0 15px;
-}
-
-.img-index {
-    /* position: sticky; */
-    /* top:59px; */
-    z-index: -10;
-    grid-area: img-index;
-    /* grid-column: 1/4;
-    grid-row: 1/4; */
-    object-fit: cover;
-    width: 100%;
-
-    max-height: 100vh;
 }
 
 .item {
@@ -237,7 +267,8 @@ header nav ul li {
     justify-content: flex-end;
 }
 
-.nombre, .apellido {
+.nombre,
+.apellido {
     width: 50%;
 }
 
@@ -252,8 +283,35 @@ header nav ul li {
     flex-direction: column;
 }
 
-@media only screen and (max-width:576px) {
-    .nombre, .apellido, .boton-form {
+@media (max-width:875px) {
+    .pie-de-pagina div {
+        /* display: flex;
+        align-items: center;
+        justify-content: flex-end; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "redes footer-logo";
+    }
+}
+
+@media (max-width:576px) {
+    .nombre,
+    .apellido,
+    .boton-form {
         width: 100%;
     }
-} 
+    .pie-de-pagina {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .footer-logo {
+        justify-content: center;
+        align-items: center;
+    }
+    .redes-sociales {
+        justify-content: center;
+        align-items: center;
+    }
+    footer div hr {
+        display:block;
+    }
+}
