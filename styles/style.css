@@ -1,322 +1,285 @@
-/* Selectores */
-
-/* Selectores de etiqueta */
-
+@charset "UTF-8";
+/*##### RESETS #####*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #c6e3ff;
-}
-
-/* ### Estilo de la barra de navegación ### */
-
-header {
-    background-color: #FFFFFF;
-    position: sticky;
-    z-index: 20;
-    top: 0px;
-    box-shadow: 1px 1px 3px gray;
-}
-
-nav ul {
-    display: flex;
-}
-
-ul .nav-item a {
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
-/* ######################################## */
-
-/* Estilo del footer */
-footer {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* width:100%; */
-    /* box-shadow: 1px 1px 3px gray; */
-    /* position:fixed; */
-    /* bottom:0; */
-    z-index: 1;
-    width: 100%;
-}
-
-.pie-de-pagina {
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-end; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-.pie-de-pagina .redes-sociales .iconos-redes a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 50px;
-    color: #212529;
-    text-align: center;
-    border-bottom: 3px solid;
-    border-color: #212529;
-    /* border-radius: 25px; */
-}
-
-.pie-de-pagina .redes-sociales .iconos-redes a:hover {
-    color: orange;
-    border-color: orange;
-}
-
-.footer-logo,
-.redes-sociales {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-logo {
-    justify-content: center;
-    align-items: start;
-    font-size: 1.25rem;
-}
-
-.redes-sociales {
-    justify-content: center;
-    align-items: center;
-}
-
-footer hr {
-    width: 95%;
-    margin: 10px 0;
-}
-
-footer div hr {
-    display: none;
-    width: 100%;
-    margin: 10px 0;
-}
-
-.copyright {
-    padding: 5px 10px;
-    text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #c6e3ff;
 }
 
 /* Quitar las decoraciones de los anclajes */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Quitar viñetas de las listas */
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+/*##### FIN # RESETS #####*/
+/*##### ESTILOS DEL HEADER #####*/
+header {
+  background-color: #FFFFFF;
+  position: sticky;
+  z-index: 20;
+  top: 0px;
+  box-shadow: 1px 1px 3px gray;
 }
 
 /* Elementos de texto de la barra de navegación */
 header nav ul li {
-    /* display: inline-block;
-    font-size: larger; */
-    font-weight: bold;
+  font-weight: bold;
 }
 
-/* Selectores de ID */
-
-#id-ejemplo {
-    background-color: gray;
+nav ul {
+  display: flex;
 }
 
-/* Selectores de clases */
-
-.clase-ejemplo {
-    width: 50%;
-    height: 100vh;
-    /* viewport width/height utiliza la medida del dispositivo */
-    /* Porcentaje % utiliza el porcentaje de su contenedor */
+ul .nav-item a {
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .logo {
-    padding-top: 3px;
-    padding-bottom: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
-.img-logo {
-    width: 45px;
-    height: 45px;
+/*##### FIN # ESTILOS DEL HEADER #####*/
+/*##### ESTILOS DEL FOOTER #####*/
+footer {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width:100%; */
+  /* box-shadow: 1px 1px 3px gray; */
+  /* position:fixed; */
+  /* bottom:0; */
+  z-index: 1;
+  width: 100%;
 }
 
-/* .btn-perfil {
-    width: 45px;
-    height: 45px;
-    margin: 10px;
-} */
-
-.imagen-galeria {
-    max-width: 20%;
+.pie-de-pagina {
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-end; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
-.lugar {
-    display: inline-flex;
+.pie-de-pagina .redes-sociales .iconos-redes a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  color: #212529;
+  text-align: center;
+  border-bottom: 3px solid;
+  border-color: #212529;
+  /* border-radius: 25px; */
 }
 
-.imagen-lista {
-    width: 150px;
+.pie-de-pagina .redes-sociales .iconos-redes a:hover {
+  color: orange;
+  border-color: orange;
 }
 
-.lista-lugares {
-    display: flex;
-    /* flex-direction: row;  column */
-    justify-content: center;
-    flex-wrap: wrap;
+.footer-logo,
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
 }
 
-.lugar {
-    width: 80%;
+.footer-logo {
+  justify-content: center;
+  align-items: start;
+  font-size: 1.25rem;
 }
 
+.redes-sociales {
+  justify-content: center;
+  align-items: center;
+}
+
+footer hr {
+  width: 95%;
+  margin: 10px 0;
+}
+
+footer div hr {
+  display: none;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.copyright {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/*##### FIN # ESTILOS DEL FOOTER #####*/
+/*##### ESTILOS DE INDEX #####*/
 .contenido-principal-index {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/Montevideo-Plaza-Independencia-1.jpg");
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/Montevideo-Plaza-Independencia-1.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
 }
 
 .seccion-index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* grid-template-columns: 10fr 2fr;
-    grid-template-rows: 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .seccion-index hr {
-    width: 50%;
-    height: 15px;
-    color: orange;
-    opacity: initial;
+  width: 50%;
+  height: 15px;
+  color: orange;
+  opacity: initial;
 }
 
 .seccion-index .boton-index {
-    border-radius: 4px;
-    color: orange;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 2px solid orange;
-    background-color: transparent;
-    padding: 5px 50px;
-    transition: 0.5s;
-    cursor: pointer;
+  border-radius: 4px;
+  color: orange;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid orange;
+  background-color: transparent;
+  padding: 5px 50px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .seccion-index .boton-index:hover {
-    color: #212529;
-    background-color: orange;
+  color: #212529;
+  background-color: orange;
 }
 
 .titulo {
-    font-weight: bold;
-    font-size: 50px;
-    /* text-shadow: 0px 1px 10px black; */
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    /* filter: drop-shadow(0px 0px 20px black); */
-
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .sub-titulo {
-    font-weight: bold;
-    font-size: 30px;
-    /* text-shadow: 0px 1px 10px black; */
-    letter-spacing: 1px;
-    text-align: center;
-    color: #FFFFFF;
-
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .parrafo {
-    color: #FFFFFF;
-    font-size: 20px;
-    text-align: center;
-    /* text-shadow: 0px 1px 10px black; */
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
 }
 
-.item {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+/*##### FIN # ESTILOS DE INDEX #####*/
+/*##### ESTILOS DE GALERIA #####*/
+.imagen-galeria {
+  max-width: 20%;
 }
 
-.boton-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+/*##### FIN # ESTILOS DE GALERIA #####*/
+/*##### ESTILOS DE UBICACION #####*/
+/*##### FIN # ESTILOS DE UBICACION #####*/
+/*##### ESTILOS DE INFORMACION #####*/
+.lugar {
+  width: 80%;
+  display: inline-flex;
 }
 
+.imagen-lista {
+  width: 150px;
+}
+
+.lista-lugares {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*##### FIN # ESTILOS DE INFORMACION #####*/
+/*##### ESTILOS DE CONTACTO #####*/
 .nombre,
 .apellido {
-    width: 50%;
+  width: 50%;
 }
 
 .boton-form {
-    margin: 5px 0;
-    background-color: orange;
-    width: 200px;
+  margin: 5px 0;
+  background-color: orange;
+  width: 200px;
 }
 
 .sobre-nosotros {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width:875px) {
-    .pie-de-pagina div {
-        /* display: flex;
-        align-items: center;
-        justify-content: flex-end; */
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "redes footer-logo";
-    }
+.item {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width:576px) {
-
-    .nombre,
-    .apellido,
-    .boton-form {
-        width: 100%;
-    }
-
-    .pie-de-pagina {
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-    }
-
-    .footer-logo {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .redes-sociales {
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer div hr {
-        display: block;
-    }
+.boton-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+/*##### FIN # ESTILOS DE CONTACTO #####*/
+/*##### MEDIA QUERYS #####*/
+@media (max-width: 875px) {
+  .pie-de-pagina div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "redes footer-logo";
+  }
+}
+@media (max-width: 576px) {
+  .nombre,
+  .apellido,
+  .boton-form {
+    width: 100%;
+  }
+  .pie-de-pagina {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .footer-logo {
+    justify-content: center;
+    align-items: center;
+  }
+  .redes-sociales {
+    justify-content: center;
+    align-items: center;
+  }
+  footer div hr {
+    display: block;
+  }
+}
+/*##### FIN # MEDIA QUERYS #####*/
+
+/*# sourceMappingURL=style.css.map */
