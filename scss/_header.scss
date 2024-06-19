@@ -1,9 +1,9 @@
 header {
-    background-color: $color-principal;
+    background-color: map-get($paleta-colores, primario);
     position: sticky;
     z-index: 20;
     top: 0px;
-    box-shadow: 1px 1px 3px gray;
+    box-shadow: 1px 1px 3px map-get($paleta-colores, sombra);
 }
 
 /* Elementos de texto de la barra de navegación */

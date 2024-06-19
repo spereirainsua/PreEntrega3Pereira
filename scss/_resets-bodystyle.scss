@@ -6,7 +6,7 @@
 
 body {
     font-family: $fuentes;
-    background-color: $color-body;
+    background-color: map-get($paleta-colores, secundario);
 }
 
 /* Quitar las decoraciones de los anclajes */

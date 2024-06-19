@@ -19,17 +19,17 @@
 .seccion-index hr {
     width: 50%;
     height: 15px;
-    color: $color-items;
+    color: map-get($paleta-colores, lineas);
     opacity: initial;
 }
 
 .seccion-index .boton-index {
     border-radius: 4px;
-    color: $color-items;
+    color: map-get($paleta-colores, botones);
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
-    border: 2px solid $color-items;
+    border: 2px solid map-get($paleta-colores, botones);
     background-color: transparent;
     padding: 5px 50px;
     transition: 0.5s;
@@ -37,15 +37,15 @@
 }
 
 .seccion-index .boton-index:hover {
-    color: $color-item-sec;
-    background-color: $color-items;
+    color: map-get($paleta-colores, texto-boton);
+    background-color: map-get($paleta-colores, botones);
 }
 
 .titulo {
     font-weight: bold;
     font-size: 50px;
     letter-spacing: 1px;
-    color: $color-principal;
+    color: map-get($paleta-colores, color-titulo);
 
 }
 
@@ -54,12 +54,12 @@
     font-size: 30px;
     letter-spacing: 1px;
     text-align: center;
-    color: $color-principal;
+    color: map-get($paleta-colores, color-titulo);
 
 }
 
 .parrafo {
-    color: $color-principal;
+    color: map-get($paleta-colores, color-texto);
     font-size: 20px;
     text-align: center;
 }

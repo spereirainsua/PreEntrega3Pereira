@@ -1,5 +1,5 @@
 footer {
-    background-color: $color-principal;
+    background-color: map-get($paleta-colores, primario);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,15 +44,15 @@ footer {
                     width: 45px;
                     height: 45px;
                     line-height: 50px;
-                    color: #212529;
+                    color: map-get($paleta-colores, iconos);
                     text-align: center;
                     border-bottom: 3px solid;
-                    border-color: $color-item-sec;
+                    border-color: map-get($paleta-colores, bordes);
                 }
 
                 a:hover {
-                    color: $color-items;
-                    border-color: $color-items;
+                    color: map-get($paleta-colores, botones);
+                    border-color: map-get($paleta-colores, botones);
                 }
             }
         }

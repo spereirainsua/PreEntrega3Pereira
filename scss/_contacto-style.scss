@@ -3,14 +3,21 @@
     width: 50%;
 }
 
-.img-pag-contacto {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/Quebrada_de_los_Cuervos.jpeg");
+.fondo-contacto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/casa-pueblo-punta-del-este-uruguay_2.jpg");
     width: 100%;
     height: fit-content;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-contacto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,10 +27,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 10vh;
+        margin-top: 5vh;
 
         h1 {
-            color: $color-principal;
+            color: map-get($paleta-colores, primario);
             font-weight: bold;
             font-size: 45px;
         }
@@ -31,7 +38,7 @@
         hr {
             width: 100%;
             height: 15px;
-            color: $color-items;
+            color: map-get($paleta-colores, lineas);
             opacity: initial;
             margin-top: 5px;
         }
@@ -44,17 +51,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5vh;
 
     .caja {
-        background-color: $color-principal;
+        background-color: map-get($paleta-colores, primario);
         width: 100%;
         display: flex;
         flex-direction: column;
         align-self: flex-start;
-        padding: 10px 10px;
-        margin: 10px 0;
-        box-shadow: 2px 2px 5px gray;
-        border-left: 5px solid $color-items;
+        padding: 15px 20px;
+        box-shadow: 2px 2px 5px map-get($paleta-colores, sombra);
+        border-left: 5px solid map-get($paleta-colores, lineas);
 
         form {
             .item {
@@ -71,16 +78,16 @@
 
                 .boton-form {
                     margin: 5px 0;
-                    background-color: $color-items;
+                    background-color: map-get($paleta-colores, botones);
                     width: 200px;
                     font-weight: bold;
-                    border: 2px solid $color-item-sec;
-                    color: $color-item-sec;
+                    border: 2px solid map-get($paleta-colores, bordes);
+                    color: map-get($paleta-colores, texto-boton);
                     transition: 0.5s;
                 }
 
                 .boton-form:hover {
-                    border: 2px solid $color-item-sec;
+                    border: 2px solid map-get($paleta-colores, bordes);
                     background-color: transparent;
                 }
             }

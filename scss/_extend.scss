@@ -1,0 +1,13 @@
+
+.item-info-sitios {
+    width: 200px;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid map-get($paleta-colores, bordes);
+    transition: 0.5s;
+
+}
+
+.item-info-sitios:hover {
+    transform:scale(1.1,1.1);
+}
