@@ -4,23 +4,24 @@ header {
     z-index: 20;
     top: 0px;
     box-shadow: 1px 1px 3px map-get($paleta-colores, sombra);
-}
 
-/* Elementos de texto de la barra de navegación */
-header nav ul li {
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-}
-
-ul .nav-item a {
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
-.logo {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    nav {
+        div {
+            .logo {
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+            div {
+                ul {
+                    .nav-item {
+                        a {
+                            font-size: 18px;
+                            letter-spacing: 1px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

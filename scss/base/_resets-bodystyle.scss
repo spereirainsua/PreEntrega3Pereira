@@ -7,14 +7,14 @@
 body {
     font-family: $fuentes;
     background-color: map-get($paleta-colores, secundario);
-}
 
-/* Quitar las decoraciones de los anclajes */
-a {
-    text-decoration: none;
-}
+    /* Quitar las decoraciones de los anclajes */
+    a {
+        text-decoration: none;
+    }
 
-/* Quitar viñetas de las listas */
-ul {
-    list-style-type: none;
+    /* Quitar viñetas de las listas */
+    ul {
+        list-style-type: none;
+    }
 }
