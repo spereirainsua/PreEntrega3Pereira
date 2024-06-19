@@ -1,0 +1,14 @@
+.lugar {
+    width: 80%;
+    display: inline-flex;
+}
+
+.imagen-lista {
+    width: 150px;
+}
+
+.lista-lugares {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

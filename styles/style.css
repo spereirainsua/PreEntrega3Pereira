@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*##### VARIABLES #####*/
+/*##### FIN # VARIABLES #####*/
 /*##### RESETS #####*/
 * {
   padding: 0;
@@ -8,7 +10,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #c6e3ff;
+  background-color: #ecf9ff;
 }
 
 /* Quitar las decoraciones de los anclajes */
@@ -58,26 +60,36 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width:100%; */
-  /* box-shadow: 1px 1px 3px gray; */
-  /* position:fixed; */
-  /* bottom:0; */
   z-index: 1;
   width: 100%;
 }
-
-.pie-de-pagina {
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-end; */
+footer .pie-de-pagina {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-
-.pie-de-pagina .redes-sociales .iconos-redes a {
+footer .pie-de-pagina .footer-logo,
+footer .pie-de-pagina .redes-sociales {
+  display: flex;
+  flex-direction: column;
+}
+footer .pie-de-pagina .footer-logo {
+  justify-content: center;
+  align-items: start;
+  font-size: 1.25rem;
+}
+footer .pie-de-pagina hr {
+  display: none;
+  width: 100%;
+  margin: 10px 0;
+}
+footer .pie-de-pagina .redes-sociales {
+  justify-content: center;
+  align-items: center;
+}
+footer .pie-de-pagina .redes-sociales .iconos-redes a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -88,43 +100,16 @@ footer {
   text-align: center;
   border-bottom: 3px solid;
   border-color: #212529;
-  /* border-radius: 25px; */
 }
-
-.pie-de-pagina .redes-sociales .iconos-redes a:hover {
+footer .pie-de-pagina .redes-sociales .iconos-redes a:hover {
   color: orange;
   border-color: orange;
 }
-
-.footer-logo,
-.redes-sociales {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo {
-  justify-content: center;
-  align-items: start;
-  font-size: 1.25rem;
-}
-
-.redes-sociales {
-  justify-content: center;
-  align-items: center;
-}
-
 footer hr {
   width: 95%;
   margin: 10px 0;
 }
-
-footer div hr {
-  display: none;
-  width: 100%;
-  margin: 10px 0;
-}
-
-.copyright {
+footer .copyright {
   padding: 5px 10px;
   text-align: center;
 }
@@ -227,57 +212,123 @@ footer div hr {
   width: 50%;
 }
 
-.boton-form {
-  margin: 5px 0;
-  background-color: orange;
-  width: 200px;
-}
-
-.sobre-nosotros {
+.img-pag-contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/Quebrada_de_los_Cuervos.jpeg");
+  width: 100%;
+  height: fit-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-}
-
-.item {
-  display: inline-block;
   align-items: center;
   justify-content: center;
 }
-
-.boton-item {
+.img-pag-contacto div {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+.img-pag-contacto div h1 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 45px;
+}
+.img-pag-contacto div hr {
+  width: 100%;
+  height: 15px;
+  color: orange;
+  opacity: initial;
+  margin-top: 5px;
+}
+
+.seccion-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-contacto .caja {
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 10px 10px;
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px gray;
+  border-left: 5px solid orange;
+}
+.seccion-contacto .caja form .item {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.seccion-contacto .caja form .boton-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.seccion-contacto .caja form .boton-item .boton-form {
+  margin: 5px 0;
+  background-color: orange;
+  width: 200px;
+  font-weight: bold;
+  border: 2px solid #212529;
+  color: #212529;
+  transition: 0.5s;
+}
+.seccion-contacto .caja form .boton-item .boton-form:hover {
+  border: 2px solid #212529;
+  background-color: transparent;
 }
 
 /*##### FIN # ESTILOS DE CONTACTO #####*/
 /*##### MEDIA QUERYS #####*/
-@media (max-width: 875px) {
+@media (max-width: 768px) {
   .pie-de-pagina div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "redes footer-logo";
   }
+  .sobre-nosotros .caja-izq {
+    width: 100%;
+    align-self: center;
+  }
+  .sobre-nosotros .caja-der {
+    width: 100%;
+    align-self: center;
+  }
 }
 @media (max-width: 576px) {
   .nombre,
-  .apellido,
-  .boton-form {
+  .apellido {
     width: 100%;
   }
-  .pie-de-pagina {
+  .seccion-contacto .caja form .boton-item .boton-form {
+    width: 100%;
+  }
+  footer .pie-de-pagina {
     grid-template-columns: 1fr;
     grid-gap: 15px;
   }
-  .footer-logo {
+  footer .pie-de-pagina .footer-logo {
     justify-content: center;
     align-items: center;
   }
-  .redes-sociales {
-    justify-content: center;
-    align-items: center;
-  }
-  footer div hr {
+  footer .pie-de-pagina hr {
     display: block;
+  }
+  footer .pie-de-pagina .redes-sociales {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .img-pag-contacto div {
+    width: 90%;
   }
 }
 /*##### FIN # MEDIA QUERYS #####*/

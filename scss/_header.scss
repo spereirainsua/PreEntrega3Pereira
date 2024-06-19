@@ -1,0 +1,26 @@
+header {
+    background-color: $color-principal;
+    position: sticky;
+    z-index: 20;
+    top: 0px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+/* Elementos de texto de la barra de navegación */
+header nav ul li {
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+ul .nav-item a {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.logo {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
