@@ -1,41 +1,92 @@
-@media (max-width:768px) {
+@media screen and (max-width:1400px) {
+    .imagen-galeria:nth-child(10) {
+        grid-column-start: span 2;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contenedor-galeria {
+        .titulo-galeria {
+            grid-template-columns: 1fr;
+
+            h1 {
+                justify-self: center;
+            }
+
+            .busqueda-y-filtrado {
+                justify-self: center;
+                align-items: center;
+
+                .form-inline {
+                    display: none;
+                }
+
+                .oculto-md {
+                    display: block;
+                }
+            }
+        }
+
+        .galeria {
+            .imagen-galeria:nth-child(1) {
+                grid-row-start: span 1;
+            }
+
+            .imagen-galeria:nth-child(6) {
+                grid-column-start: span 1;
+            }
+
+            .imagen-galeria:nth-child(8) {
+                grid-row-start: span 1;
+            }
+
+            .imagen-galeria:nth-child(10) {
+                grid-column-start: span 1;
+            }
+        }
+    }
+
     .pie-de-pagina div {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "redes footer-logo";
     }
-    .sobre-nosotros {
-        .caja-izq {
-            width: 100%;
-            align-self: center;
-        }
-        .caja-der {
-            width: 100%;
-            align-self: center;
-        }
-    }
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) {
 
-    .nombre,
-    .apellido {
-        width: 100%;
-    }
+    .fondo-contacto {
+        .seccion-contacto {
+            .caja {
+                form {
 
-    .seccion-contacto .caja form .boton-item .boton-form {
-        width: 100%;
+                    .nombre,
+                    .apellido {
+                        width: 100%;
+                    }
+
+                    .boton-item {
+                        .boton-form {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     footer .pie-de-pagina {
         grid-template-columns: 1fr;
         grid-gap: 15px;
+
         .footer-logo {
             justify-content: center;
             align-items: center;
         }
+
         hr {
             display: block;
         }
+
         .redes-sociales {
             justify-content: center;
             align-items: center;
@@ -43,7 +94,7 @@
     }
 }
 
-@media (max-width:480px) {
+@media screen and (max-width:480px) {
     .img-pag-contacto {
         div {
             width: 90%;

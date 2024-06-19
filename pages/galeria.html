@@ -56,25 +56,70 @@
             </div>
         </nav>
     </header>
-    <main class="contenido-principal">
-        <h1>Galería</h1>
-        <section class="busqueda-y-filtrado">
-            <form action="" method="POST">
-                <label for="buscador">Buscar:</label>
-                <input type="text" id="buscador">
-                <select id="filtro">
-                    <option value="todos">Todos</option>
-                    <option value="restaurantes">Restaurantes</option>
-                    <option value="bares">Bares</option>
-                    <option value="parques">Parques</option>
-                    <option value="monumentos">Monumentos</option>
-                    <option value="museos">Museos</option>
-                    <option value="librerias">Librerias</option>
-                </select>
-                <input type="submit" value="Buscar">
-            </form>
-        </section>
-        <section class="galeria">
+    <main class="contenedor-galeria">
+        <div class="container-lg titulo-galeria">
+            <div>
+                <h1>GALERÍA</h1>
+                <hr>
+            </div>
+
+            <section class="busqueda-y-filtrado">
+                <form class="form-inline" action="" method="POST">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupBuscar">Buscar</label>
+                        </div>
+                        <input type="text" class="form-control" id="inputGroupBuscar"
+                            placeholder="Ej: Plaza Independencia">
+
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Categoría</label>
+                        </div>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option value="todos">Todos</option>
+                            <option value="restaurantes">Restaurantes</option>
+                            <option value="bares">Bares</option>
+                            <option value="parques">Parques</option>
+                            <option value="monumentos">Monumentos</option>
+                            <option value="museos">Museos</option>
+                            <option value="librerias">Librerias</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn bi bi-search" type="button"></button>
+                        </div>
+                    </div>
+                </form>
+                <form class="oculto-md" action="" method="POST">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupBuscar">Buscar</label>
+                        </div>
+                        <input type="text" class="form-control" id="inputGroupBuscar"
+                            placeholder="Ej: Plaza Independencia">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Categoría</label>
+                        </div>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option value="todos">Todos</option>
+                            <option value="restaurantes">Restaurantes</option>
+                            <option value="bares">Bares</option>
+                            <option value="parques">Parques</option>
+                            <option value="monumentos">Monumentos</option>
+                            <option value="museos">Museos</option>
+                            <option value="librerias">Librerias</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn bi bi-search" type="button"></button>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+            </section>
+
+        </div>
+        <section class="container-lg galeria">
             <img src="../multimedia/galeria/casa-pueblo-punta-del-este-uruguay.jpg"
                 alt="Imagen que muestra edificio turistico ubicado cerca de la playa" class="imagen-galeria">
             <img src="../multimedia/galeria/palacio-salvo.jpg" alt="Imagen que muestra el Palacio Salvo"
@@ -93,6 +138,8 @@
                 alt="Imagen de librería Puro Verso" class="imagen-galeria">
             <img src="../multimedia/galeria/tpmbar.jpg" alt="Imagen que muestra un bar en Montevideo"
                 class="imagen-galeria">
+            <img src="../multimedia/galeria/colonia_del_sacramento.jpg"
+                alt="Imagen mostrando una calle empedrada con casas a ambos lados" class="imagen-galeria">
         </section>
     </main>
     <footer class="container-fluid">

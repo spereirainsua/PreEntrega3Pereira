@@ -1,3 +1,168 @@
-.imagen-galeria {
-    max-width: 20%;
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../multimedia/galeria/fondo_galeria.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    .titulo-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 5vh;
+
+        div {
+            h1 {
+                justify-self: flex-start;
+                color: map-get($paleta-colores, color-titulo);
+                font-weight: bold;
+                font-size: 45px;
+            }
+            hr {
+                width: 100%;
+                height: 15px;
+                color: map-get($paleta-colores, lineas);
+                opacity: initial;
+                margin-top: 5px;
+            }
+        }
+        .busqueda-y-filtrado {
+            width: 100%;
+
+            .form-inline {
+                .input-group {
+
+                    .form-control,
+                    .form-select {
+                        border-color: map-get($paleta-colores, sombra);
+                    }
+
+                    .form-select {
+                        max-width: 200px;
+                    }
+
+                    .input-group-prepend:nth-child(1) {
+                        .input-group-text {
+                            background-color: map-get($paleta-colores, terciario);
+                            border-bottom-right-radius: 0;
+                            border-top-right-radius: 0;
+                            border-color: map-get($paleta-colores, sombra);
+                            color: map-get($paleta-colores, color-texto);
+                        }
+                    }
+
+                    .input-group-prepend:nth-child(3) {
+                        .input-group-text {
+                            background-color: map-get($paleta-colores, terciario);
+                            border-radius: 0;
+                            border-color: map-get($paleta-colores, sombra);
+                            color: map-get($paleta-colores, color-texto);
+                        }
+                    }
+
+                    .input-group-append:nth-child(5) {
+                        button {
+                            @include estilo_boton(map-get($paleta-colores, terciario), map-get($paleta-colores, color-texto), map-get($paleta-colores, sombra), 1px);
+                            border-bottom-left-radius: 0;
+                            border-top-left-radius: 0;
+                            z-index: 0;
+                        }
+
+                        button:hover {
+                            border-color: map-get($paleta-colores, bordes);
+                            background-color: map-get($paleta-colores, botones);
+                        }
+                    }
+                }
+            }
+            .oculto-md {
+                display: none;
+                .input-group {
+                    margin-bottom: 10px;
+                    .form-control,
+                    .form-select {
+                        border-color: map-get($paleta-colores, sombra);
+                    }
+
+                    .input-group-prepend:nth-child(1) {
+                        .input-group-text {
+                            background-color: map-get($paleta-colores, terciario);
+                            border-bottom-right-radius: 0;
+                            border-top-right-radius: 0;
+                            border-color: map-get($paleta-colores, sombra);
+                            color: map-get($paleta-colores, color-texto);
+                        }
+                    }
+
+                    .input-group-append {
+                        button {
+                            @include estilo_boton(map-get($paleta-colores, terciario), map-get($paleta-colores, color-texto), map-get($paleta-colores, sombra), 1px);
+                            border-bottom-left-radius: 0;
+                            border-top-left-radius: 0;
+                            z-index: 0;
+                        }
+
+                        button:hover {
+                            border-color: map-get($paleta-colores, bordes);
+                            background-color: map-get($paleta-colores, botones);
+                        }
+                    }
+                }
+            }
+            hr {
+                width: 100%;
+                height: 15px;
+                color: map-get($paleta-colores, lineas);
+                opacity: initial;
+            }
+        }
+    }
+
+    .galeria {
+        min-height: 100vh;
+        // width: 80%;
+        border: 10px solid map-get($paleta-colores, primario);
+        background-color: map-get($paleta-colores, primario);
+        // border-right: 10px solid map-get($paleta-colores, primario);
+        // margin: 0 auto;
+        display: grid;
+        grid-template-columns:
+            repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+        gap: 10px;
+        
+        padding: 0 0;
+        margin-bottom: 5vh;
+
+        .imagen-galeria {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .imagen-galeria:hover {
+            transform: scale(1.05);
+            outline: 2px solid map-get($paleta-colores, primario);
+        }
+
+        .imagen-galeria:nth-child(1) {
+            grid-row-start: span 2;
+        }
+
+        .imagen-galeria:nth-child(6) {
+            grid-column-start: span 2;
+        }
+
+        .imagen-galeria:nth-child(8) {
+            grid-row-start: span 2;
+        }
+    }
+
 }

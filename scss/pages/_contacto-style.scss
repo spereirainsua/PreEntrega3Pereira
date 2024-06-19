@@ -24,7 +24,7 @@
             margin-top: 5vh;
 
             h1 {
-                color: map-get($paleta-colores, primario);
+                color: map-get($paleta-colores, color-titulo);
                 font-weight: bold;
                 font-size: 45px;
             }
@@ -77,18 +77,15 @@
                     justify-content: flex-start;
 
                     .boton-form {
+                        @include estilo_boton(map-get($paleta-colores, sombra), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 2px);
                         margin: 5px 0;
-                        background-color: map-get($paleta-colores, botones);
-                        width: 200px;
                         font-weight: bold;
-                        border: 2px solid map-get($paleta-colores, bordes);
-                        color: map-get($paleta-colores, texto-boton);
-                        transition: 0.5s;
+
                     }
 
                     .boton-form:hover {
                         border: 2px solid map-get($paleta-colores, bordes);
-                        background-color: transparent;
+                        background-color: map-get($paleta-colores, botones);
                     }
                 }
             }

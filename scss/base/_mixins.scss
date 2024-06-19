@@ -2,3 +2,13 @@
     height: $alto;
     width: $ancho;
 }
+
+@mixin estilo_boton ($color-fondo, $color-texto, $color-borde, $ancho-borde) {
+    border-radius: 4px;
+    color: $color-texto;
+    letter-spacing: 1px;
+    border: $ancho-borde solid $color-borde;
+    background-color: $color-fondo;
+    transition: 0.5s;
+    cursor: pointer;
+}

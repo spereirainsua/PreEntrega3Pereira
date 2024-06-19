@@ -7,51 +7,50 @@
     background-repeat: no-repeat;
     background-position-x: center;
     display: flex;
+
     .seccion-index {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         hr {
             width: 50%;
             height: 15px;
             color: map-get($paleta-colores, lineas);
             opacity: initial;
         }
+
         .titulo {
             font-weight: bold;
             font-size: 50px;
             letter-spacing: 1px;
             color: map-get($paleta-colores, color-titulo);
-        
+
         }
-        
+
         .sub-titulo {
             font-weight: bold;
             font-size: 30px;
             letter-spacing: 1px;
             text-align: center;
             color: map-get($paleta-colores, color-titulo);
-        
+
         }
-        
+
         .parrafo {
             color: map-get($paleta-colores, color-texto);
             font-size: 20px;
             text-align: center;
         }
+
         .boton-index {
-            border-radius: 4px;
-            color: map-get($paleta-colores, botones);
+            @include estilo_boton(transparent, map-get($paleta-colores, botones), map-get($paleta-colores, botones), 3px);
             font-size: 18px;
             font-weight: bold;
-            letter-spacing: 1px;
-            border: 2px solid map-get($paleta-colores, botones);
-            background-color: transparent;
             padding: 5px 50px;
-            transition: 0.5s;
-            cursor: pointer;
         }
+
         .boton-index:hover {
             color: map-get($paleta-colores, texto-boton);
             background-color: map-get($paleta-colores, botones);
