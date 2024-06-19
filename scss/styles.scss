@@ -1,45 +1,45 @@
 /*##### MAPS #####*/
-@import "_maps";
+@import "./base/maps";
 /*##### FIN # MAPS #####*/
 
 /*##### VARIABLES #####*/
-@import "_variables";
+@import "./base/variables";
 /*##### FIN # VARIABLES #####*/
 
 /*##### MIXINS #####*/
-@import "_mixins";
+@import "./base/mixins";
 /*##### FIN # MIXINS #####*/
 
 /*##### RESETS #####*/
-@import "_resets-bodystyle";
+@import "./base/resets-bodystyle";
 /*##### FIN # RESETS #####*/
 
 /*##### ESTILOS DEL HEADER #####*/
-@import "_header";
+@import "./components/header";
 /*##### FIN # ESTILOS DEL HEADER #####*/
 
 /*##### ESTILOS DEL FOOTER #####*/
-@import "_footer";
+@import "./components/footer";
 /*##### FIN # ESTILOS DEL FOOTER #####*/
 
 /*##### ESTILOS DE INDEX #####*/
-@import "_index-style";
+@import "./pages/index-style";
 /*##### FIN # ESTILOS DE INDEX #####*/
 
 /*##### ESTILOS DE GALERIA #####*/
-@import "_galeria-style";
+@import "./pages/galeria-style";
 /*##### FIN # ESTILOS DE GALERIA #####*/
 
 /*##### ESTILOS DE UBICACION #####*/
-@import "_ubicacion-style";
+@import "./pages/ubicacion-style";
 /*##### FIN # ESTILOS DE UBICACION #####*/
 
 /*##### ESTILOS DE INFORMACION #####*/
-@import "_informacion-style";
+@import "./pages/informacion-style";
 /*##### FIN # ESTILOS DE INFORMACION #####*/
 
 /*##### ESTILOS DE CONTACTO #####*/
-@import "_contacto-style";
+@import "./pages/contacto-style";
 /*##### FIN # ESTILOS DE CONTACTO #####*/
 
 
@@ -47,5 +47,5 @@
 
 
 /*##### MEDIA QUERYS #####*/
-@import "_media-querys";
+@import "./base/media-querys";
 /*##### FIN # MEDIA QUERYS #####*/
