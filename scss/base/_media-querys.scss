@@ -43,6 +43,37 @@
 }
 
 @media screen and (max-width:768px) {
+    //     .contenedor-informacion {
+    //         .lista-lugares {
+    //             .lugar {
+    //                 flex-direction: row;
+
+    //                 // text-align: left;
+
+    //                 .lugar-imagen {
+    //                     .imagen-lista {
+    //                         width: fit-content;
+    //                         height: 100%;
+    //                     }
+
+    //                     height: 100%;
+    //                     width: 50%;
+    //                 }
+
+    //                 .lugar-texto {
+    //                     height: 100%;
+    //                     // flex-direction: row;
+    //                     justify-content: left;
+    //                     text-align: left;
+    //                     h3 {
+    //                         padding: 0 1rem;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
     .contenedor-informacion {
         .titulo-informacion {
             grid-template-columns: 1fr;

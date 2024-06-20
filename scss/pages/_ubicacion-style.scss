@@ -1,5 +1,3 @@
-// @import "../base/extend";
-
 .contenedor-ubicacion {
     @include contenedor-principal ($url-fondo-ubicacion);
     .titulo-ubicacion {
