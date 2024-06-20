@@ -1,3 +1,21 @@
+@import "../base/extend";
+
+
+.contenedor-informacion {
+    @include contenedor-principal ($url-fondo-galeria);
+    .titulo-informacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 5vh;
+        @extend .texto-titulo-pag;
+        @extend .barra_busqueda;
+    }
+
+}
+
 .lugar {
     width: 80%;
     display: inline-flex;

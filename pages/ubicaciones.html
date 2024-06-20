@@ -56,24 +56,69 @@
             </div>
         </nav>
     </header>
-    <main class="contenido-principal">
-        <h1>Ubicaciones</h1>
-        <section class="busqueda-y-filtrado">
-            <form action="" method="POST">
-                <label for="buscador">Buscar:</label>
-                <input type="text" id="buscador">
-                <select id="filtro">
-                    <option value="todos">Todos</option>
-                    <option value="restaurantes">Restaurantes</option>
-                    <option value="bares">Bares</option>
-                    <option value="parques">Parques</option>
-                    <option value="monumentos">Monumentos</option>
-                    <option value="museos">Museos</option>
-                    <option value="librerias">Librerias</option>
-                </select>
-                <input type="submit" value="Buscar">
-            </form>
-        </section>
+    <main class="contenedor-ubicacion">
+        <div class="container-lg titulo-ubicacion">
+            <div>
+                <h1>UBICACIONES</h1>
+                <hr>
+            </div>
+
+            <section class="busqueda-y-filtrado">
+                <form class="form-inline" action="" method="POST">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupBuscar">Buscar</label>
+                        </div>
+                        <input type="text" class="form-control" id="inputGroupBuscar"
+                            placeholder="Ej: Plaza Independencia">
+
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Categoría</label>
+                        </div>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option value="todos">Todos</option>
+                            <option value="restaurantes">Restaurantes</option>
+                            <option value="bares">Bares</option>
+                            <option value="parques">Parques</option>
+                            <option value="monumentos">Monumentos</option>
+                            <option value="museos">Museos</option>
+                            <option value="librerias">Librerias</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn bi bi-search" type="button"></button>
+                        </div>
+                    </div>
+                </form>
+                <form class="oculto-md" action="" method="POST">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupBuscar">Buscar</label>
+                        </div>
+                        <input type="text" class="form-control" id="inputGroupBuscar"
+                            placeholder="Ej: Plaza Independencia">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Categoría</label>
+                        </div>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option value="todos">Todos</option>
+                            <option value="restaurantes">Restaurantes</option>
+                            <option value="bares">Bares</option>
+                            <option value="parques">Parques</option>
+                            <option value="monumentos">Monumentos</option>
+                            <option value="museos">Museos</option>
+                            <option value="librerias">Librerias</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn bi bi-search" type="button"></button>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+            </section>
+
+        </div>
         <section class="mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442352.6570763434!2d-58.42456006696528!3d-32.58825670582715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575073afb5fde09%3A0x4a5596616016524a!2sUruguay!5e0!3m2!1ses-419!2suy!4v1718773204279!5m2!1ses-419!2suy"

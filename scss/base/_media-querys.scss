@@ -1,10 +1,78 @@
-@media screen and (max-width:1400px) {
-    .imagen-galeria:nth-child(10) {
-        grid-column-start: span 2;
+@media (min-width:1200px) {
+    .contenedor-galeria {
+        .galeria {
+            .imagen-galeria:nth-child(3) {
+                grid-row-start: span 2;
+            }
+            .imagen-galeria:nth-child(9) {
+                grid-row-start: span 2;
+            }
+            .imagen-galeria:nth-child(10) {
+                grid-column-start: span 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contenedor-galeria {
+        .galeria {
+            border-width: 25px;
+        }
     }
 }
 
 @media screen and (max-width:768px) {
+    .contenedor-informacion {
+        .titulo-informacion {
+            grid-template-columns: 1fr;
+
+            h1 {
+                justify-self: center;
+            }
+
+            .busqueda-y-filtrado {
+                justify-self: center;
+                align-items: center;
+
+                .form-inline {
+                    display: none;
+                }
+
+                .oculto-md {
+                    display: block;
+                }
+            }
+        }
+
+        .informacion {}
+    }
+
+    .contenedor-ubicacion {
+        .titulo-ubicacion {
+            grid-template-columns: 1fr;
+
+            h1 {
+                justify-self: center;
+            }
+
+            .busqueda-y-filtrado {
+                justify-self: center;
+                align-items: center;
+
+                .form-inline {
+                    display: none;
+                }
+
+                .oculto-md {
+                    display: block;
+                }
+            }
+        }
+
+        .mapa {}
+    }
+
     .contenedor-galeria {
         .titulo-galeria {
             grid-template-columns: 1fr;
@@ -28,6 +96,8 @@
         }
 
         .galeria {
+            grid-template-columns: 1fr;
+
             .imagen-galeria:nth-child(1) {
                 grid-row-start: span 1;
             }
@@ -40,9 +110,9 @@
                 grid-row-start: span 1;
             }
 
-            .imagen-galeria:nth-child(10) {
-                grid-column-start: span 1;
-            }
+            // .imagen-galeria:nth-child(10) {
+            //     grid-column-start: span 1;
+            // }
         }
     }
 

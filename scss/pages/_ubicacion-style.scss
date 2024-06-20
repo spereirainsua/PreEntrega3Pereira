@@ -1,0 +1,16 @@
+@import "../base/extend";
+
+.contenedor-ubicacion {
+    @include contenedor-principal ($url-fondo-galeria);
+    .titulo-ubicacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 5vh;
+        @extend .texto-titulo-pag;
+        @extend .barra_busqueda;
+    }
+
+}

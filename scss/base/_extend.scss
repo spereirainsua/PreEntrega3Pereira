@@ -1,3 +1,113 @@
+.texto-titulo-pag {
+    div {
+        h1 {
+            justify-self: flex-start;
+            color: map-get($paleta-colores, color-titulo);
+            font-weight: bold;
+            font-size: 45px;
+        }
+
+        hr {
+            @include linea_naranja;
+            margin-top: 5px;
+        }
+    }
+}
+
+.barra_busqueda {
+    .busqueda-y-filtrado {
+        width: 100%;
+
+        .form-inline {
+            .input-group {
+
+                .form-control,
+                .form-select {
+                    border-color: map-get($paleta-colores, sombra);
+                }
+
+                .form-select {
+                    max-width: 200px;
+                }
+
+                .input-group-prepend:nth-child(1) {
+                    .input-group-text {
+                        background-color: map-get($paleta-colores, terciario);
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                        border-color: map-get($paleta-colores, sombra);
+                        color: map-get($paleta-colores, color-texto);
+                    }
+                }
+
+                .input-group-prepend:nth-child(3) {
+                    .input-group-text {
+                        background-color: map-get($paleta-colores, terciario);
+                        border-radius: 0;
+                        border-color: map-get($paleta-colores, sombra);
+                        color: map-get($paleta-colores, color-texto);
+                    }
+                }
+
+                .input-group-append:nth-child(5) {
+                    button {
+                        @include estilo_boton(map-get($paleta-colores, terciario), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 1px);
+                        border-bottom-left-radius: 0;
+                        border-top-left-radius: 0;
+                        z-index: 0;
+                    }
+
+                    button:hover {
+                        border-color: map-get($paleta-colores, bordes);
+                        background-color: map-get($paleta-colores, botones);
+                    }
+                }
+            }
+        }
+
+        .oculto-md {
+            display: none;
+
+            .input-group {
+                margin-bottom: 10px;
+
+                .form-control,
+                .form-select {
+                    border-color: map-get($paleta-colores, sombra);
+                }
+
+                .input-group-prepend:nth-child(1) {
+                    .input-group-text {
+                        background-color: map-get($paleta-colores, terciario);
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                        border-color: map-get($paleta-colores, sombra);
+                        color: map-get($paleta-colores, color-texto);
+                    }
+                }
+
+                .input-group-append {
+                    button {
+                        @include estilo_boton(map-get($paleta-colores, terciario), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 1px);
+                        border-bottom-left-radius: 0;
+                        border-top-left-radius: 0;
+                        z-index: 0;
+                    }
+
+                    button:hover {
+                        border-color: map-get($paleta-colores, bordes);
+                        background-color: map-get($paleta-colores, botones);
+                    }
+                }
+            }
+        }
+
+        hr {
+            @include linea_naranja;
+        }
+    }
+}
+
 
 .item-info-sitios {
     width: 200px;
@@ -9,5 +119,5 @@
 }
 
 .item-info-sitios:hover {
-    transform:scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
