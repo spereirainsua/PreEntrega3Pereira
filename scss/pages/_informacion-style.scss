@@ -45,9 +45,14 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
+                h3 {
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                }
                 p {
                     padding: 0 1rem;
-                    font-size: 16px;
+                    font-size: 15px;
                     font-weight: 300;
                 }
             }
@@ -59,19 +64,3 @@
         }
     }
 }
-
-/* ESTILOS VIEJOS*/
-// .lugar {
-//     width: 80%;
-//     display: inline-flex;
-// }
-
-// .imagen-lista {
-//     width: 150px;
-// }
-
-// .lista-lugares {
-//     display: flex;
-//     justify-content: center;
-//     flex-wrap: wrap;
-// }

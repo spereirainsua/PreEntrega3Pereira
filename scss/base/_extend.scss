@@ -60,8 +60,8 @@
                     }
 
                     button:hover {
-                        border-color: map-get($paleta-colores, botones);
-                        background-color: map-get($paleta-colores, botones);
+                        border-color: map-get($paleta-colores, sombra);
+                        background-color: map-get($paleta-colores, sombra);
                     }
                 }
             }
