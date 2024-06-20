@@ -33,7 +33,7 @@
 
         .imagen-galeria:hover {
             transform: scale(1.05);
-            outline: 2px solid map-get($paleta-colores, primario);
+            outline: 2px solid map-get($paleta-colores, primario) !important;
         }
 
         .imagen-galeria:nth-child(1) {
