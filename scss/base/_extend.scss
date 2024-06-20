@@ -16,9 +16,11 @@
 
 .barra_busqueda {
     .busqueda-y-filtrado {
+        background-color: map-get($paleta-colores, terciario);
+        padding: 10px 15px;
         width: 100%;
-
         .form-inline {
+            border-left: 5px solid map-get($paleta-colores, lineas );
             .input-group {
 
                 .form-control,
@@ -35,7 +37,7 @@
                         background-color: map-get($paleta-colores, terciario);
                         border-bottom-right-radius: 0;
                         border-top-right-radius: 0;
-                        border-color: map-get($paleta-colores, sombra);
+                        border-color: map-get($paleta-colores, terciario);
                         color: map-get($paleta-colores, color-texto);
                     }
                 }
@@ -44,21 +46,21 @@
                     .input-group-text {
                         background-color: map-get($paleta-colores, terciario);
                         border-radius: 0;
-                        border-color: map-get($paleta-colores, sombra);
+                        border-color: map-get($paleta-colores, terciario);
                         color: map-get($paleta-colores, color-texto);
                     }
                 }
 
                 .input-group-append:nth-child(5) {
                     button {
-                        @include estilo_boton(map-get($paleta-colores, terciario), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 1px);
+                        @include estilo_boton(map-get($paleta-colores, botones), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 1px);
                         border-bottom-left-radius: 0;
                         border-top-left-radius: 0;
                         z-index: 0;
                     }
 
                     button:hover {
-                        border-color: map-get($paleta-colores, bordes);
+                        border-color: map-get($paleta-colores, botones);
                         background-color: map-get($paleta-colores, botones);
                     }
                 }
@@ -67,7 +69,7 @@
 
         .oculto-md {
             display: none;
-
+            border-left: 5px solid map-get($paleta-colores, lineas );
             .input-group {
                 margin-bottom: 10px;
 
@@ -78,33 +80,35 @@
 
                 .input-group-prepend:nth-child(1) {
                     .input-group-text {
+                        width: 98px;
                         background-color: map-get($paleta-colores, terciario);
                         border-bottom-right-radius: 0;
                         border-top-right-radius: 0;
-                        border-color: map-get($paleta-colores, sombra);
+                        border-color: map-get($paleta-colores, terciario);
                         color: map-get($paleta-colores, color-texto);
                     }
                 }
 
                 .input-group-append {
                     button {
-                        @include estilo_boton(map-get($paleta-colores, terciario), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 1px);
+                        @include estilo_boton(map-get($paleta-colores, botones), map-get($paleta-colores, texto-boton), map-get($paleta-colores, sombra), 1px);
                         border-bottom-left-radius: 0;
                         border-top-left-radius: 0;
                         z-index: 0;
                     }
 
                     button:hover {
-                        border-color: map-get($paleta-colores, bordes);
-                        background-color: map-get($paleta-colores, botones);
+                        border-color: map-get($paleta-colores, sombra);
+                        background-color: map-get($paleta-colores, sombra);
                     }
                 }
             }
         }
 
-        hr {
-            @include linea_naranja;
-        }
+        
+    }
+    hr {
+        @include linea_naranja;
     }
 }
 

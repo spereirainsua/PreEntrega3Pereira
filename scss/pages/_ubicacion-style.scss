@@ -1,7 +1,7 @@
-@import "../base/extend";
+// @import "../base/extend";
 
 .contenedor-ubicacion {
-    @include contenedor-principal ($url-fondo-galeria);
+    @include contenedor-principal ($url-fondo-ubicacion);
     .titulo-ubicacion {
         display: flex;
         flex-direction: column;
@@ -12,5 +12,11 @@
         @extend .texto-titulo-pag;
         @extend .barra_busqueda;
     }
-
+    .mapa {
+        min-height: 70vh;
+        iframe {
+            width: 100%;
+            height: 70vh;
+        }
+    }
 }

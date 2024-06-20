@@ -1,8 +1,8 @@
-@import "../base/extend";
+// @import "../base/extend";
 
 
 .contenedor-informacion {
-    @include contenedor-principal ($url-fondo-galeria);
+    @include contenedor-principal ($url-fondo-informacion);
     .titulo-informacion {
         display: flex;
         flex-direction: column;

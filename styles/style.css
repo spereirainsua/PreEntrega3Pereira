@@ -5,6 +5,122 @@
 /*##### FIN # VARIABLES #####*/
 /*##### MIXINS #####*/
 /*##### FIN # MIXINS #####*/
+.texto-titulo-pag div h1, .contenedor-informacion .titulo-informacion div h1, .contenedor-ubicacion .titulo-ubicacion div h1, .contenedor-galeria .titulo-galeria div h1 {
+  justify-self: flex-start;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+}
+.texto-titulo-pag div hr, .contenedor-informacion .titulo-informacion div hr, .contenedor-ubicacion .titulo-ubicacion div hr, .contenedor-galeria .titulo-galeria div hr {
+  width: 100%;
+  color: orange;
+  opacity: initial;
+  margin-top: 5px;
+}
+
+.barra_busqueda .busqueda-y-filtrado, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado {
+  background-color: rgb(2, 90, 156);
+  padding: 10px 15px;
+  width: 100%;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline {
+  border-left: 5px solid orange;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-control,
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select,
+.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select,
+.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select,
+.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select {
+  border-color: gray;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select {
+  max-width: 200px;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text {
+  background-color: rgb(2, 90, 156);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-color: rgb(2, 90, 156);
+  color: white;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text {
+  background-color: rgb(2, 90, 156);
+  border-radius: 0;
+  border-color: rgb(2, 90, 156);
+  color: white;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button {
+  border-radius: 4px;
+  color: white;
+  letter-spacing: 1px;
+  border: 1px solid gray;
+  background-color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  z-index: 0;
+}
+.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover {
+  border-color: orange;
+  background-color: orange;
+}
+.barra_busqueda .busqueda-y-filtrado .oculto-md, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md {
+  display: none;
+  border-left: 5px solid orange;
+}
+.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group {
+  margin-bottom: 10px;
+}
+.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-control,
+.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-select,
+.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
+.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
+.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-select {
+  border-color: gray;
+}
+.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text {
+  width: 98px;
+  background-color: rgb(2, 90, 156);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-color: rgb(2, 90, 156);
+  color: white;
+}
+.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button {
+  border-radius: 4px;
+  color: white;
+  letter-spacing: 1px;
+  border: 1px solid gray;
+  background-color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  z-index: 0;
+}
+.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover {
+  border-color: gray;
+  background-color: gray;
+}
+.barra_busqueda hr, .contenedor-informacion .titulo-informacion hr, .contenedor-ubicacion .titulo-ubicacion hr, .contenedor-galeria .titulo-galeria hr {
+  width: 100%;
+  color: orange;
+  opacity: initial;
+}
+
+.item-info-sitios {
+  width: 200px;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px solid #212529;
+  transition: 0.5s;
+}
+
+.item-info-sitios:hover {
+  transform: scale(1.1, 1.1);
+}
+
 /*##### RESETS #####*/
 * {
   padding: 0;
@@ -171,124 +287,13 @@ footer .copyright {
 
 /*##### FIN # ESTILOS DE INDEX #####*/
 /*##### ESTILOS DE GALERIA #####*/
-.texto-titulo-pag div h1, .contenedor-informacion .titulo-informacion div h1, .contenedor-ubicacion .titulo-ubicacion div h1, .contenedor-galeria .titulo-galeria div h1 {
-  justify-self: flex-start;
-  color: white;
-  font-weight: bold;
-  font-size: 45px;
-}
-.texto-titulo-pag div hr, .contenedor-informacion .titulo-informacion div hr, .contenedor-ubicacion .titulo-ubicacion div hr, .contenedor-galeria .titulo-galeria div hr {
-  width: 100%;
-  height: 15px;
-  color: orange;
-  opacity: initial;
-  margin-top: 5px;
-}
-
-.barra_busqueda .busqueda-y-filtrado, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado {
-  width: 100%;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-control,
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select {
-  border-color: gray;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select {
-  max-width: 200px;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button {
-  border-radius: 4px;
-  color: white;
-  letter-spacing: 1px;
-  border: 1px solid gray;
-  background-color: rgb(2, 90, 156);
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 0;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover {
-  border-color: #212529;
-  background-color: orange;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md {
-  display: none;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group {
-  margin-bottom: 10px;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-control,
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-select {
-  border-color: gray;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button {
-  border-radius: 4px;
-  color: white;
-  letter-spacing: 1px;
-  border: 1px solid gray;
-  background-color: rgb(2, 90, 156);
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 0;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover {
-  border-color: #212529;
-  background-color: orange;
-}
-.barra_busqueda .busqueda-y-filtrado hr, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado hr, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado hr, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado hr {
-  width: 100%;
-  height: 15px;
-  color: orange;
-  opacity: initial;
-}
-
-.item-info-sitios {
-  width: 200px;
-  height: 500px;
-  border-radius: 5px;
-  border: 1px solid #212529;
-  transition: 0.5s;
-}
-
-.item-info-sitios:hover {
-  transform: scale(1.1, 1.1);
-}
-
 .contenedor-galeria {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: -1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/fondo_galeria.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/fondo_galeria.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -319,7 +324,7 @@ footer .copyright {
 }
 .contenedor-galeria .galeria .imagen-galeria:hover {
   transform: scale(1.05);
-  outline: 2px solid white;
+  outline: 2px solid white !important;
 }
 .contenedor-galeria .galeria .imagen-galeria:nth-child(1) {
   grid-row-start: span 2;
@@ -330,124 +335,13 @@ footer .copyright {
 
 /*##### FIN # ESTILOS DE GALERIA #####*/
 /*##### ESTILOS DE UBICACION #####*/
-.texto-titulo-pag div h1, .contenedor-informacion .titulo-informacion div h1, .contenedor-ubicacion .titulo-ubicacion div h1, .contenedor-galeria .titulo-galeria div h1 {
-  justify-self: flex-start;
-  color: white;
-  font-weight: bold;
-  font-size: 45px;
-}
-.texto-titulo-pag div hr, .contenedor-informacion .titulo-informacion div hr, .contenedor-ubicacion .titulo-ubicacion div hr, .contenedor-galeria .titulo-galeria div hr {
-  width: 100%;
-  height: 15px;
-  color: orange;
-  opacity: initial;
-  margin-top: 5px;
-}
-
-.barra_busqueda .busqueda-y-filtrado, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado {
-  width: 100%;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-control,
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select {
-  border-color: gray;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select {
-  max-width: 200px;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button {
-  border-radius: 4px;
-  color: white;
-  letter-spacing: 1px;
-  border: 1px solid gray;
-  background-color: rgb(2, 90, 156);
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 0;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover {
-  border-color: #212529;
-  background-color: orange;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md {
-  display: none;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group {
-  margin-bottom: 10px;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-control,
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-select {
-  border-color: gray;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button {
-  border-radius: 4px;
-  color: white;
-  letter-spacing: 1px;
-  border: 1px solid gray;
-  background-color: rgb(2, 90, 156);
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 0;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover {
-  border-color: #212529;
-  background-color: orange;
-}
-.barra_busqueda .busqueda-y-filtrado hr, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado hr, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado hr, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado hr {
-  width: 100%;
-  height: 15px;
-  color: orange;
-  opacity: initial;
-}
-
-.item-info-sitios {
-  width: 200px;
-  height: 500px;
-  border-radius: 5px;
-  border: 1px solid #212529;
-  transition: 0.5s;
-}
-
-.item-info-sitios:hover {
-  transform: scale(1.1, 1.1);
-}
-
 .contenedor-ubicacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: -1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/fondo_galeria.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/fondo_ubicacion.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -461,127 +355,23 @@ footer .copyright {
   align-items: center;
   padding-top: 5vh;
 }
+.contenedor-ubicacion .mapa {
+  min-height: 70vh;
+}
+.contenedor-ubicacion .mapa iframe {
+  width: 100%;
+  height: 70vh;
+}
 
 /*##### FIN # ESTILOS DE UBICACION #####*/
 /*##### ESTILOS DE INFORMACION #####*/
-.texto-titulo-pag div h1, .contenedor-informacion .titulo-informacion div h1, .contenedor-galeria .titulo-galeria div h1, .contenedor-ubicacion .titulo-ubicacion div h1 {
-  justify-self: flex-start;
-  color: white;
-  font-weight: bold;
-  font-size: 45px;
-}
-.texto-titulo-pag div hr, .contenedor-informacion .titulo-informacion div hr, .contenedor-galeria .titulo-galeria div hr, .contenedor-ubicacion .titulo-ubicacion div hr {
-  width: 100%;
-  height: 15px;
-  color: orange;
-  opacity: initial;
-  margin-top: 5px;
-}
-
-.barra_busqueda .busqueda-y-filtrado, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado {
-  width: 100%;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-control,
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select,
-.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select {
-  border-color: gray;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .form-select, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .form-select {
-  max-width: 200px;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(1) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-prepend:nth-child(3) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button {
-  border-radius: 4px;
-  color: white;
-  letter-spacing: 1px;
-  border: 1px solid gray;
-  background-color: rgb(2, 90, 156);
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 0;
-}
-.barra_busqueda .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .form-inline .input-group .input-group-append:nth-child(5) button:hover {
-  border-color: #212529;
-  background-color: orange;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md {
-  display: none;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group {
-  margin-bottom: 10px;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-control, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-control,
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .form-select,
-.contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .form-select {
-  border-color: gray;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-prepend:nth-child(1) .input-group-text {
-  background-color: rgb(2, 90, 156);
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-color: gray;
-  color: white;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button {
-  border-radius: 4px;
-  color: white;
-  letter-spacing: 1px;
-  border: 1px solid gray;
-  background-color: rgb(2, 90, 156);
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 0;
-}
-.barra_busqueda .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado .oculto-md .input-group .input-group-append button:hover {
-  border-color: #212529;
-  background-color: orange;
-}
-.barra_busqueda .busqueda-y-filtrado hr, .contenedor-informacion .titulo-informacion .busqueda-y-filtrado hr, .contenedor-galeria .titulo-galeria .busqueda-y-filtrado hr, .contenedor-ubicacion .titulo-ubicacion .busqueda-y-filtrado hr {
-  width: 100%;
-  height: 15px;
-  color: orange;
-  opacity: initial;
-}
-
-.item-info-sitios {
-  width: 200px;
-  height: 500px;
-  border-radius: 5px;
-  border: 1px solid #212529;
-  transition: 0.5s;
-}
-
-.item-info-sitios:hover {
-  transform: scale(1.1, 1.1);
-}
-
 .contenedor-informacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: -1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/fondo_galeria.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/fondo_informacion.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -619,7 +409,7 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   z-index: -1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/galeria/casa-pueblo-punta-del-este-uruguay_2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../multimedia/fondo_contacto.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -646,7 +436,6 @@ footer .copyright {
 }
 .fondo-contacto .titulo-contacto div hr {
   width: 100%;
-  height: 15px;
   color: orange;
   opacity: initial;
   margin-top: 5px;
@@ -702,7 +491,7 @@ footer .copyright {
 
 /*##### FIN # ESTILOS DE CONTACTO #####*/
 /*##### MEDIA QUERYS #####*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .contenedor-galeria .galeria .imagen-galeria:nth-child(3) {
     grid-row-start: span 2;
   }
@@ -716,6 +505,11 @@ footer .copyright {
 @media screen and (max-width: 992px) {
   .contenedor-galeria .galeria {
     border-width: 25px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 768px) {
+  header nav div div ul .nav-item a {
+    letter-spacing: 0;
   }
 }
 @media screen and (max-width: 768px) {
