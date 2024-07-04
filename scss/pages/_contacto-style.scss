@@ -38,6 +38,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        hr {
+            width: 100%;
+            color: orange;
+            opacity: initial;
+            margin: 20px 0;
+        }
         .caja {
             background-color: map-get($paleta-colores, primario);
             width: 100%;
@@ -81,6 +87,7 @@
             }
         }
     }
+   
     .seccion-contacto:last-of-type {
         margin-bottom: 5vh;
     }

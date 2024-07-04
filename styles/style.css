@@ -478,6 +478,12 @@ footer .copyright {
   align-items: center;
   justify-content: center;
 }
+.fondo-contacto .seccion-contacto hr {
+  width: 100%;
+  color: orange;
+  opacity: initial;
+  margin: 20px 0;
+}
 .fondo-contacto .seccion-contacto .caja {
   background-color: white;
   width: 100%;
