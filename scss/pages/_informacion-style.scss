@@ -17,8 +17,7 @@
         grid-template-columns:
             repeat(auto-fit, minmax(min(400px, 100%), 1fr));
         gap: 5px;
-
-        // background-color: map-get($paleta-colores, primario);
+        margin-bottom: 5vh;
         .lugar {
             display: flex;
             flex-direction: column;
