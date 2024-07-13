@@ -156,6 +156,9 @@ header nav div .logo {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+header nav div div ul {
+  text-align: center;
+}
 header nav div div ul .nav-item a {
   font-size: 18px;
   letter-spacing: 1px;
